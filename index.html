@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/3386fd30d1.js" crossorigin="anonymous"></script>
+    <script src="validation.js" defer></script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 flex items-center justify-center">
+    <div class="max-w-md w-full bg-white shadow-lg rounded-lg p-8">
+        <h1 class="text-3xl font-bold text-center mb-6">UniQuest</h1>
+        <h2 class="text-3xl font-bold text-center mb-6">Create Your Account</h2>
+        <form id="registrationForm">
+
+            <div class="mb-5">
+                <label for="email" class="block text-sm font-medium text-gray-700 col-form-label">Email</label>
+                <span></span>
+                <input type="email" id="email" name="email"
+                    class="form-control mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder="you@example.com">
+            </div>
+            <div class="mb-5">
+                <label for="username" class="block text-sm font-medium text-gray-700 col-form-label">Username</label>
+                <span></span>
+                <input type="text" id="username" name="username"
+                    class="form-control mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder="Your username">
+            </div>
+            <div class="mb-5">
+                <label for="birthday" class="block text-sm font-medium text-gray-700 col-form-label">Date of Birth</label>
+                <span></span>
+                <input type="date" id="birthday" name="birthday"
+                    class="form-control mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+            </div>
+
+            <div class="mb-5">
+                <label for="password" class="block text-sm font-medium text-gray-700 col-form-label">Password</label>
+                <span></span>
+                <input type="password" id="password" name="password"
+                    class="form-control mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder="Create a password">
+            </div>
+
+            <div class="mb-5">
+                <label for="rePassword" class="block text-sm font-medium text-gray-700 col-form-label">Confirm Password</label>
+                <span></span>
+                <input type="password" id="rePassword" name="rePassword"
+                    class="form-control mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                    placeholder="Re-enter your password">
+            </div>
+
+            <div>
+                <button id="signin"
+                    class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md transition duration-300">
+                    Sign Up
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
